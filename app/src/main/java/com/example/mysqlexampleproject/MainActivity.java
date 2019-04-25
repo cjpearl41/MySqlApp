@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         String msg = "";
         //JDBC driver name and database URL
-        static final String JDBC_DRIVER = "com.example.jdbc.Driver";
+        static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
         static final String DB_URL = "jdbc:mysql://" +
                 DbStrings.DATABASE_URL + "/" +
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        protected String doInBackground(String... strings) {
+        protected String doInBackground(String... params) {
 
             Connection conn = null;
             Statement stmt = null;
@@ -75,8 +75,10 @@ public class MainActivity extends AppCompatActivity {
                     ResultSet rs = stmt.executeQuery(sql);
 
                     while(rs.next()){
-                        String name = rs.getString("name");
+                        String name = rs.getString("fruitname");
                         double price = rs.getDouble("price");
+
+                        fruitsMap.put(name,price);
                     }
                     msg = "Process Complete";
 

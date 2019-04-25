@@ -5,29 +5,29 @@
 
     <TextView
         android:id="@+id/nameTextView"
-        android:layout_width="117dp"
-        android:layout_height="59dp"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="60dp"
         android:layout_marginTop="62dp"
-        android:layout_marginEnd="234dp"
-        android:layout_marginBottom="610dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="641dp"
         android:text="Name" />
 
     <TextView
         android:id="@+id/priceTextView"
-        android:layout_width="109dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="288dp"
         android:layout_marginTop="61dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="615dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="638dp"
         android:text="Price" />
 </RelativeLayout>
